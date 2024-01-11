@@ -1,7 +1,8 @@
 #!/bin/sh
+export PATH="$PATH:/Users/Leo/.local/bin"
 
-PENDING_TASK=$(todo task stats -p)
-OVERDUE_TASK=$(todo task stats -o)
+PENDING_TASK=$(todo task stats -p | tr -d '\n')
+OVERDUE_TASK=$(todo task stats -o | tr -d '\n')
 
 if [[ $PENDING_TASK == 0 ]]; then
 	sketchybar --set $NAME label.drawing=off \
