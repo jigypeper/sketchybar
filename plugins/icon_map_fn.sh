@@ -10,7 +10,7 @@ function icon_map() {
     icon_result=":vmware_fusion:"
     ;;
   "Alacritty" | "Hyper" | "iTerm2" | "kitty" | "Terminal" | "终端" | "WezTerm"| "Ghostty")
-    icon_result="􀪏"
+    icon_result=":terminal:"
     ;;
   "Microsoft To Do" | "Things")
     icon_result=":things:"
@@ -25,10 +25,10 @@ function icon_map() {
     icon_result=":desktop:"
     ;;
   "Home")
-    icon_result="􀙗"
+    icon_result=":desktop:"
     ;;
   "Other")
-    icon_result="􀏜"
+    icon_result=":default:"
     ;;
   "Android Messages")
     icon_result=":android_messages:"
@@ -169,7 +169,7 @@ function icon_map() {
     icon_result=":firefox:"
     ;;
   "Slack")
-    icon_result="􀆃"
+    icon_result=":slack:"
     ;;
   "Spotify")
     icon_result=":spotify:"
@@ -193,7 +193,7 @@ function icon_map() {
     icon_result=":twitter:"
     ;;
   "Default")
-    icon_result="􀏜"
+    icon_result=":default:"
     ;;
   "Pages" | "Pages 文稿")
     icon_result=":pages:"
@@ -250,7 +250,7 @@ function icon_map() {
     icon_result=":click_up:"
     ;;
   "Arc")
-    icon_result="􀆪"
+    icon_result=":arc:"
     ;;
   "Zeplin")
     icon_result=":zeplin:"
@@ -382,7 +382,7 @@ function icon_map() {
     icon_result=":messages:"
     ;;
   "Obsidian")
-    icon_result="􁕍"
+    icon_result=":obsidian:"
     ;;
   "IntelliJ IDEA")
     icon_result=":idea:"
@@ -430,7 +430,7 @@ function icon_map() {
     icon_result=":whats_app:"
     ;;
   *)
-    icon_result="􀏜"
+    icon_result=":default:"
     ;;
   esac
 }
