@@ -1,6 +1,6 @@
 #!/bin/sh
 
-STATUS_LABEL=$(lsappinfo info -only StatusLabel "Mail")
+STATUS_LABEL=$(lsappinfo info -only StatusLabel "Microsoft Outlook")
 LABEL=""
 
 if [[ $STATUS_LABEL =~ \"label\"=\"([^\"]*)\" ]]; then
