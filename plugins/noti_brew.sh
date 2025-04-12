@@ -1,10 +1,12 @@
 #!/bin/sh
 
-STATUS_LABEL=$(lsappinfo info -only StatusLabel "Microsoft Teams")
+STATUS_LABEL=$(brew outdated | wc -l | xargs)
 LABEL=""
 
-if [[ $STATUS_LABEL =~ \"label\"=\"([^\"]*)\" ]]; then
-    LABEL="${BASH_REMATCH[1]}"
+if [[ $STATUS_LABEL == "0" ]]; then
+    LABEL=""
+else
+    LABEL=$STATUS_LABEL
 fi
 
 if [[ $LABEL == "" ]];
