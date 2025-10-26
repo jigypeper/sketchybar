@@ -32,7 +32,7 @@ while IFS= read -r line; do
         sketchybar --add item tasks.task.$INDEX popup.tasks \
                    --set tasks.task.$INDEX \
                    label="$LABEL" \
-                   icon="$PROJECT" \
+                   icon="[$PROJECT]" \
                    icon.font="Hack Nerd Font:Bold:14.0" \
                    label.font="Hack Nerd Font:Bold:14.0" \
                    icon.padding_left=10 \
