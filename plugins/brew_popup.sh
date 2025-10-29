@@ -3,6 +3,7 @@
 # Remove old brew items
 sketchybar --remove '/brew\.package\..*/' 2>/dev/null
 sketchybar --remove 'brew.update' 2>/dev/null
+sketchybar --remove 'brew.none' 2>/dev/null
 
 # Get outdated packages
 OUTDATED=$(brew outdated)
